@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "users/franciscorosa/Desktop/PRI-2020-RECURSO/PR.xml">
+<pr>
+    <meta>
+        <key>PRI2020-recurso</key>
+        <title>Exame de PRI</title>
+        <bdate>08 Fevereiro</bdate>
+        <edate>08 Fevereiro</edate>
+        <supervisor>José Carlos Ramalho</supervisor>
+    </meta>
+    <workteam>
+        <worker num="a80749">
+            <name>Francisco Rosa</name>
+            <email>a80749@alunos.uminho.pt</email>
+        </worker>
+    </workteam>
+    <abstract>
+        <paragrafo>Pergunta 1.1</paragrafo>
+        <paragrafo>mongoimport -d PEI2020 -c teams --jsonArray PEI-teams.json </paragrafo>
+       
+        <paragrafo>Pergunta 2.1</paragrafo>
+        <paragrafo>db.teams.count()</paragrafo>
+    
+    
+        <paragrafo>Pergunta 2.2</paragrafo>
+        <paragrafo>db.teams.find({}, {_id:0, team: 1}).sort({team: 1})</paragrafo>
+        
+        <paragrafo>Pergunta 2.3</paragrafo>
+        <paragrafo>db.teams.distinct('members').length</paragrafo>
+
+        <paragrafo>Pergunta 2.2</paragrafo>
+        <paragrafo>Correr o servidor api-server com o npm e abrir em http://localhost:3000/</paragrafo>
+
+    </abstract>
+</pr>
